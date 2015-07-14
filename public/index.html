@@ -3,6 +3,7 @@
 <head>
 	<meta charset='UTF-8' />
 	<title>meinespielzeugkiste frontend-test</title>
+	<link rel='stylesheet' href='css/normalize.css' />
 	<link rel='stylesheet' href='css/main.css' />
 	<script src='js/main.js'></script>
 </head>
@@ -10,13 +11,80 @@
 	
 	<section class='content'>
 
+
+
+		<!-- main header -->
+
 		<header class='main-header'>
+			<img class='main-header__logo' src='gfx/msk_logo.svg' alt='meinespielzeugkiste' />
+			<h1 class='main-header__text'>
+				Leihe Deine Lieblingsspielzeuge
+			</h1>
+			<p class='main-header__subtext'>
+				<span class='main-header__parents'>Von Eltern entwickelt -</span>
+				<span class='main-header__experts'>Von Experten geprüft -</span>
+				<span class='main-header__children'>Von Kinder geliebt</span>
+			</p>
 		</header>		
 
+
+
+		<!-- how to -->
+
 		<section class='how-to'>
+
+			<div class='how-to__video-container'>
+				<iframe class='how-to__video' src="https://www.youtube.com/embed/4QblLW05Zbk" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class='how-to__call-to-action'>
+				<button class='how-to__test-it'>Jetzt 1 Monat kostenlos testen »</button>
+				<div class='hot-to__fineprint'>Danach nur 4,99€/Monat, monatlich kündbar</div>
+			</div>
+
 		</section>
 
+
+
+		<!-- our promises -->
+
 		<section class='our-promises'>
+
+			<header class='our-promises__header'>
+				Unsere Versprechen
+			</header>
+
+			<ul class='our-promises__promises-list'>
+
+				<li class='our-promises__promise our-promises__promise--exchange'>
+					<header class='our-promises__promise-header'>
+						Jederzeit tauschen
+					</header>
+					<div class='our-promises__promise-text'>
+						Bei einer Komfort-, Mega- oder Super Mega-Kiste ist die Tauschflatrate inklusive - ohne zusätzliche Kosten
+					</div>
+				</li>
+
+				<li class='our-promises__promise our-promises__promise--nocharge'>
+					<header class='our-promises__promise-header'>
+						Keine Gebühren
+					</header>
+					<div class='our-promises__promise-text'>
+						Gefällt Deinem Kind ein Spielzeug kann dieses natürlich auch behalten werden
+					</div>
+				</li>
+
+				<li class='our-promises__promise our-promises__promise--discount'>
+					<header class='our-promises__promise-header'>
+						Bis zu 70% Rabatt
+					</header>
+					<div class='our-promises__promise-text'>
+						Gefällt Deinem Kind ein Spielzeug kann dieses natürlich auch behalten werden
+					</div>
+				</li>
+
+			</ul>
+
 		</section>
 
 	</section>
