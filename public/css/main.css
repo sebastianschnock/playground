@@ -39,14 +39,22 @@ body {
 }
 
 .main-header__logo {
-	
-	height: auto;
-	width: 10%;
+	display: inline-block;
 	float: left;
+	margin: 0 1em 1em 0;
+	max-width: 5em;
+	width: 10%;
+}
+
+.main-header__logo-image {
+	height: auto;
+	width: 100%;
+	float: left;	
 }
 
 .main-header__text {
 	color: #5CB6AF;
+	font-size: 1.8em;
 	margin-left: 10%;
 	padding-top: 0.3em;
 	text-align: center;
@@ -58,6 +66,30 @@ body {
 
 .main-header__children {
 	font-weight: bold;
+}
+
+
+
+/* Breakpoint: Medium */
+@media only screen and (min-device-width: 768px) {
+
+	.main-header__logo {
+		background-color: #ffffff;
+		border-radius: 100%;
+		display: inline-block;
+		float: left;
+		max-width: 10em;
+		padding: 1em;
+		width: 10%;
+	}
+
+	.main-header__children {
+		font-weight: normal;
+	}
+	
+	.main-header__text {
+		font-size: 2.5em;
+	}
 }
 
 
@@ -79,6 +111,7 @@ body {
 .how-to__video-container {
 	width: 100%;
 	height: 0;
+	margin: auto;
 	position: relative;
 	/* aspect ratio 1:1.778, calculated from iframe sizes of youtube embed function (560px/315px) */
 	padding-bottom: calc(100% / 1.778);
@@ -93,12 +126,17 @@ body {
 	height: 100%;
 }
 
+.how-to__call-to-action {
+	text-align: center;
+}
+
 .how-to__test-it {
 	background-image: linear-gradient(to bottom, #B2E22A, #6EA90E);
 	border: 1px solid rgba(130, 130, 130, 0.6);
 	border-radius: 6px;
 	color: #ffffff;
 	margin: 1em 0 0.5em;
+	max-width: 20em;
 	padding: 1em;
 	width: 100%;
 	text-shadow: 1px 1px 3px #666666;
@@ -110,7 +148,30 @@ body {
 
 .how-to__fineprint {
 	font-size: 0.8em;
-	text-align: center;
+}
+
+
+
+/* Breakpoint: Medium */
+@media only screen and (min-device-width: 768px) {
+
+	.how-to {
+		background-image: url("../gfx/ui_head_teaser_main@2x.jpg");
+		background-repeat: no-repeat;
+		background-position: 55% 10000%;
+		background-size: cover;
+		padding-bottom: 2em;
+		padding-top: 2em;
+	}
+
+	.how-to__video-container {
+		width: 35em;
+		padding-bottom: calc(35em / 1.778);
+	}
+
+	.how-to__fineprint {
+		color: #ffffff;
+	}
 }
 
 
@@ -129,6 +190,7 @@ body {
 	background-color: #EEF4E8;
 	margin-top: 1em;
 	/*padding: 0 5%;*/
+	overflow: hidden;
 }
 
 .our-promises:before {
@@ -148,6 +210,7 @@ body {
 .our-promises__header {
 	color: #82BFBA;
 	font-size: 2em;
+	font-weight: lighter;
 	margin: 1em 0 0;
 	text-align: center;
 }
@@ -207,4 +270,81 @@ body {
 	background-image: url('../gfx/Offer_label_64.png');
 }
 
+/* hide two promises on small screens (we don't promise users with small screens that much!) */
+.our-promises__promise--delivery,
+.our-promises__promise--quality {
+	display: none;
+}
 
+/* Breakpoint: Medium */
+@media only screen and (min-device-width: 768px) {
+
+	.our-promises:before,
+	.our-promises:after {
+		display: none;
+	}
+
+	.our-promises {
+		margin-top: 0;
+	}
+
+	.our-promises__promises-list {
+		margin: auto;		
+		max-width: 50em;
+		text-align: center;
+	}
+
+	.our-promises__header {
+		color: #5D9721;
+		font-size: 2.5em;
+	}
+
+	.our-promises__promise {
+		display: inline-block;
+		flex-direction: column;
+	}
+
+	.our-promises__promise:nth-of-type(1) {
+		float: left;
+	}
+	.our-promises__promise:nth-of-type(2) {
+		position: relative;
+		top: 7.5em;
+	}
+	.our-promises__promise:nth-of-type(3) {
+		float: right;
+	}
+	.our-promises__promise:nth-of-type(4) {
+		float: left;
+	}
+	.our-promises__promise:nth-of-type(5) {
+		float: right;
+	}
+
+	/* show all promises on bigger screens */
+	.our-promises__promise--delivery,
+	.our-promises__promise--quality {
+		display: inline-block;
+	}
+
+	.our-promises__promise--delivery .our-promises__promise-header {
+		color: #56ABA7;
+	}
+	.our-promises__promise--delivery {
+		border-color: #56ABA7;
+	}
+	.our-promises__promise--delivery {
+		background-image: url('../gfx/Logistics_delivery_truck_in_movement_64.png');
+	}
+
+	.our-promises__promise--quality .our-promises__promise-header {
+		color: #DF655B;
+	}
+	.our-promises__promise--quality {
+		border-color: #DF655B;
+	}
+	.our-promises__promise--quality {
+		background-image: url('../gfx/Christmas_stars_64.png');
+	}	
+
+}
