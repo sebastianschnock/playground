@@ -90,9 +90,23 @@ body {
 	.main-header__text {
 		font-size: 2.5em;
 	}
+
+	.main-header__subtext {
+		font-size: 1.2em;
+	}
 }
 
+/* Breakpoint: Large */
+@media only screen and (min-device-width: 1024px) {
+	
+	.main-header__text {
+		font-size: 3em;
+	}
 
+	.main-header__subtext {
+		font-size: 1.4em;
+	}
+}
 
 
 
@@ -150,6 +164,10 @@ body {
 	font-size: 0.8em;
 }
 
+.how-to__partner {
+	display: none;
+}
+
 
 
 /* Breakpoint: Medium */
@@ -158,7 +176,7 @@ body {
 	.how-to {
 		background-image: url("../gfx/ui_head_teaser_main@2x.jpg");
 		background-repeat: no-repeat;
-		background-position: 55% 10000%;
+		background-position: 55% bottom;
 		background-size: cover;
 		padding-bottom: 2em;
 		padding-top: 2em;
@@ -174,6 +192,57 @@ body {
 	}
 }
 
+/* Breakpoint: Large */
+@media only screen and (min-device-width: 1024px) {
+
+	.how-to {
+		position: relative;
+	}
+
+	.how-to__partner {
+		display: block;
+		position: absolute;
+	}
+
+	.how-to__partner--tollabox {
+		/*bottom: 0;*/
+		font-size: 1em;
+		font-weight: bold;
+		height: 20em;
+		left: 8%;
+		stroke-width: 1px;		
+		stroke: #000000;
+		top: 24em;
+	}
+
+	.how-to__partner--sorgenfresser {
+		width: 10em;
+		bottom: 2em;
+		right: 15%;
+	}
+
+	.how-to__down-arrow {
+		font-size: 3.5em;
+		position: absolute;
+		bottom: -0.5em;
+		left: 48%;
+		border: 1px solid #6EA90E;
+		background-color: #FFF;
+		border-radius: 100%;
+		width: 1em;
+		height: 1em;
+		text-align: center;
+	}
+	.how-to__down-arrow:after {
+		color: #6EA90E;
+		content: '⌄';
+		display: block;
+		position: relative;
+		top: -0.3em;
+		text-align: center;
+	}
+
+}
 
 
 
@@ -301,7 +370,7 @@ body {
 
 	.our-promises__promise {
 		display: inline-block;
-		flex-direction: column;
+		/*flex-direction: column;*/
 	}
 
 	.our-promises__promise:nth-of-type(1) {
@@ -347,4 +416,50 @@ body {
 		background-image: url('../gfx/Christmas_stars_64.png');
 	}	
 
+}
+
+/* Breakpoint: Large */
+@media only screen and (min-device-width: 1024px) {
+
+	.our-promises {
+		height: 43em;
+	}
+
+	.our-promises__header {
+		font-size: 3em;
+	}	
+
+	.our-promises__promises-list {
+		text-align: left;
+		max-width: 60em;
+	}
+
+	.our-promises__promise {
+		display: inline-block;
+		position: relative;
+	}
+
+	.our-promises__promise:nth-of-type(1) {
+		float: none;
+	}
+	.our-promises__promise:nth-of-type(2) {
+		float: none;
+		left: -4em;
+		top: 15em;
+	}
+	.our-promises__promise:nth-of-type(3) {
+		float: none;
+		top: 1em;
+		left: -8em;
+	}
+	.our-promises__promise:nth-of-type(4) {
+		float: none;
+		top: -4em;
+		left: 33em;
+	}
+	.our-promises__promise:nth-of-type(5) {
+		float: none;
+		left: 29em;
+		top: -19em;
+	}	
 }
