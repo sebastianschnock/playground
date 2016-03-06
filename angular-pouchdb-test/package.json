@@ -1,0 +1,21 @@
+{
+  "name": "angular-pouchdb-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "author": "Sebastian Schnock",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-jasmine": "^0.3.7"
+  }
+}

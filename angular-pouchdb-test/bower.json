@@ -1,0 +1,21 @@
+{
+  "name": "angular-pouchdb-test",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Sebastian Schnock"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-pouchdb": "^4.1.0"
+  }
+}
