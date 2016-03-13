@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="style.css">
+	<title>ZEIT teasers</title>
+</head>
+<body>
+	
+	<section class="teasers">
+
+		<article class="teaser">
+
+			<figure class="teaser__image">
+				<img src="http://placehold.it/800x350" alt="" class="teaser__image-content">
+			</figure>
+
+			<span class="teaser__buzzword">Wien</span>
+
+			<h1 class="teaser__header">
+				<a href="http://www.zeit.de/politik/index" class="teaser__link">
+				Wenn jemand fragt, wofür du stehst, sag für Amore
+				</a>
+			</h1>
+
+			<p class="teaser__text">
+				Das singen Wanda aus Wien und werden dafür überall gefeiert. Die Band gehört zu einer neuen Generation von Wienern, die ihre Stadt gerade ganz schön umkrempelt
+			</p>
+
+			<footer class="teaser__footer">
+				<address class="teaser__author">Ein Artikel von Sascha Chaimowicz</address>
+				<span class="teaser__comments">43 Kommentare</span>
+			</footer>
+
+		</article>
+
+		<article class="teaser">
+
+			<figure class="teaser__image">
+				<img src="http://placehold.it/800x350" alt="" class="teaser__image-content">
+			</figure>
+
+			<span class="teaser__buzzword">Studenten</span>
+
+			<h1 class="teaser__header">
+				<a href="http://www.zeit.de/sport/index" class="teaser__link">
+				Die neue Streitlust meiner Studenten
+				</a>
+			</h1>
+
+			<p class="teaser__text">
+				"Warum unsere Studenten so angepasst sind", schrieb unsere Autorin. Ihre Botschaft ein Jahr später: "Ich bin stolz auf Sie."
+			</p>
+
+			<footer class="teaser__footer">
+				<address class="teaser__author">Eine Kolumne von Sascha Chaimowicz</address>
+				<span class="teaser__comments">153 Kommentare</span>
+			</footer>
+			
+		</article>
+
+	</section>
+	
+	<script>
+		// make the whole teaser clickable
+		(function(){
+			var teasers = document.getElementsByClassName("teaser");
+			[].forEach.call(teasers, function(teaser) {
+				teaser.title = "Zum Artikel";
+				teaser.addEventListener("click", function() {
+				var url = teaser.querySelector(".teaser__link").href;
+					window.location.assign(url);
+				});
+			});
+		})();
+	</script>
+
+</body>
+</html>
+
+

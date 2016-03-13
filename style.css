@@ -1,0 +1,153 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+body {
+	padding: 0 5%;
+	background-color: #fff;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+.teasers {
+	max-width: 960px;
+}
+
+.teaser {
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	font-family: sans-serif;
+	padding: 1em 1em 1.4em;
+}
+
+.teaser__buzzword {
+	background-color: #fff;
+	color: #0000ff;
+	display: inline-block;
+	font-size: .8em;
+	font-weight: bold;
+	height: 2.5em;
+	line-height: 1.8em;
+	padding-right: .7em;
+	text-transform: uppercase;
+}
+
+.teaser__header {
+	font-size: 1.4em;
+	padding: 0 .5em .6em 0;
+}
+
+.teaser__link {
+	background-color: #fff;
+	box-decoration-break: clone;
+	box-shadow: 0.5em 0 0 #fff, 0em 0 0 #fff;
+	color: #000;
+	font-weight: bold;
+	line-height: 1.2em;
+	padding: .2em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.teaser__image {
+	margin-bottom: -1.3rem;
+	position: relative;
+	z-index: -1;
+}
+
+.teaser__image-content {
+	max-width: 100%;
+}
+
+.teaser__footer {
+	color: #999;
+	display: none;
+	font-size: .8em;
+	margin: 1em 0 0;
+}
+
+.teaser__author {
+	display: inline;
+}
+
+/* Long dash */
+.teaser__author::after {
+	border-top: 1px solid #999;
+	content: "";
+	display: inline-block;
+	height: .3em;
+	margin: 0 .5em;
+	width: 1em;
+}
+
+@media(min-width: 768px) {
+	
+	.teaser {
+		border: none;
+		float: left;
+		max-width: 50%;
+	}
+	
+	.teaser__buzzword {
+		height: 1.8em;
+	}
+	
+	.teaser__image {
+		margin-bottom: -2.5em;
+	}
+	
+	
+	.teaser__footer {
+		display: block;
+	}
+}
