@@ -1,2 +1,2 @@
-# playground
-Code snippets, test projects and coding challenges
+# ZEIT teaser
+Flexible teaser proof of concept
