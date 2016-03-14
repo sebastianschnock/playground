@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -13,14 +13,14 @@
 		<article class="teaser">
 
 			<figure class="teaser__image">
-				<img src="http://placehold.it/800x350" alt="" class="teaser__image-content">
+				<img src="http://placehold.it/800x350" alt="Wien" class="teaser__image-content">
 			</figure>
 
 			<span class="teaser__buzzword">Wien</span>
 
 			<h1 class="teaser__header">
 				<a href="http://www.zeit.de/politik/index" class="teaser__link">
-				Wenn jemand fragt, wofür du stehst, sag für Amore
+					Wenn jemand fragt, wofür du stehst, sag für Amore
 				</a>
 			</h1>
 
@@ -38,14 +38,14 @@
 		<article class="teaser">
 
 			<figure class="teaser__image">
-				<img src="http://placehold.it/800x350" alt="" class="teaser__image-content">
+				<img src="http://placehold.it/800x350" alt="Studenten" class="teaser__image-content">
 			</figure>
 
 			<span class="teaser__buzzword">Studenten</span>
 
 			<h1 class="teaser__header">
 				<a href="http://www.zeit.de/sport/index" class="teaser__link">
-				Die neue Streitlust meiner Studenten
+					Die neue Streitlust meiner Studenten
 				</a>
 			</h1>
 
@@ -69,7 +69,7 @@
 			[].forEach.call(teasers, function(teaser) {
 				teaser.title = "Zum Artikel";
 				teaser.addEventListener("click", function() {
-				var url = teaser.querySelector(".teaser__link").href;
+					var url = teaser.querySelector(".teaser__link").href;
 					window.location.assign(url);
 				});
 			});
