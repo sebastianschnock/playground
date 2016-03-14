@@ -68,6 +68,7 @@
 			var teasers = document.getElementsByClassName("teaser");
 			[].forEach.call(teasers, function(teaser) {
 				teaser.title = "Zum Artikel";
+				teaser.style.cursor = "pointer";
 				teaser.addEventListener("click", function() {
 					var url = teaser.querySelector(".teaser__link").href;
 					window.location.assign(url);
